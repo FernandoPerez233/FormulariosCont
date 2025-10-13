@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo CCS Posicionamiento</title>
+</head>
+
+<style>
+    #contenedorPadre{
+        border: 1px solid darkred;
+        background-color: hsl(250deg, 30%, 50%);
+    }
+
+    .bloque div{
+        display: block;
+    }
+
+    .enlinea div{
+        display: inline-block;
+
+    }
+
+    div{
+			 width: 150px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid blue;
+            text-align: center;
+            padding: 10px;
+            /* overflow: auto; Para que el texto largo tenga scroll */
+            box-sizing: border-box;
+        }
+
+    .Ejemplo1{
+        border: 1px solid black;
+        background-color: hsl(120, 1%, 51%);
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .Ejemplo2{
+        border: 1px solid black;
+        background-color: hsl(60deg, 30%, 50%);
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    .Ejemplo3{
+        border: 1px solid black;
+        background-color: hsl(0deg, 30%, 50%);
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    .Ejemplo4{
+        border: 1px solid black;
+        background-color: hsl(180deg, 30%, 50%);    
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+</style>
+<body>
+    
+    <div id="contenedorPadre" class="bloque">
+         <div class="Ejemplo1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repudiandae, nihil, beatae quam pariatur 
+            eligendi expedita ea </p>
+        </div>
+        <div class="Ejemplo2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repudiandae, nihil, beatae quam pariatur 
+            eligendi expedita ea </p>
+        </div>
+        <div class="Ejemplo3">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repudiandae, nihil, beatae quam pariatur 
+            eligendi expedita ea </p>
+        </div>
+        <div class="Ejemplo4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repudiandae, nihil, beatae quam pariatur 
+            eligendi expedita ea </p>
+        </div>
+    </div>
+
+    <div id="contenedorPadre" class="enlinea">
+        <div class="Ejemplo1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repudiandae, nihil, beatae quam pariatur 
+            eligendi expedita e</p>
+        </div>
+        <div class="Ejemplo2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repudiandae, nihil, beatae quam pariatur 
+            eligendi expedita ea </p>
+        </div>
+        <div class="Ejemplo3">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repudiandae, nihil, beatae quam pariatur 
+            eligendi expedita ea </p>
+        </div>
+        <div class="Ejemplo4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repudiandae, nihil, beatae quam pariatur 
+            eligendi expedita ea</p>
+        </div>
+    </div>
+</body>
+</html>
